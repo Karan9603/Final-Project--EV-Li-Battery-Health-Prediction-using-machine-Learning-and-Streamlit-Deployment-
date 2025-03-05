@@ -2,25 +2,6 @@ import streamlit as st
 import joblib
 import numpy as np
 import os
-
-# st.write(f"Joblib version in Streamlit Cloud: {joblib.__version__}")
-
-# # Get current directory
-# current_directory = os.getcwd()
-# st.write(f"Current Directory: {current_directory}")
-
-# # List all files in the directory
-# st.write("Files in directory:", os.listdir(current_directory))
-
-# # Check if the model file exists
-# model_filename = "battery_health_L_model.joblib"
-# model_path = os.path.join(current_directory, model_filename)
-
-# if os.path.exists(model_path):
-#     st.write("Model file found. Loading...", model_path)
-#     model = joblib.load(model_path)
-# else:
-#     st.error(f"Model file '{model_filename}' not found! Please check the file path.")
     
 # Get the correct file path dynamically
 model_path = os.path.join(os.getcwd(), "battery_health_L_model.joblib")
@@ -70,4 +51,4 @@ if st.button("Predict Battery Health"):
     prediction = model.predict(input_data)[0]
     
     # Display result
-    st.success(f"🔋 Predicted Battery Health: {prediction:.2f}")
+    st.success(f"🔋 Predicted Battery Health: {prediction:.4f}")
