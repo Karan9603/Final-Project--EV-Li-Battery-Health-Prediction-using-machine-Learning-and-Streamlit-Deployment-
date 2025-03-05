@@ -1,10 +1,12 @@
 import streamlit as st
 import joblib
 import numpy as np
+import os
 
 
 # Load the trained model
-model = joblib.load("battery_health_L_model.joblib")
+model_path = os.path.join(os.getcwd(), "battery_health_L_model.joblib")
+model = joblib.load(model_path)
 
 # Streamlit App
 st.title("🔋 Battery Health Prediction App")
