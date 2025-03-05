@@ -6,7 +6,7 @@ import os
 st.write(f"Joblib version in Streamlit Cloud: {joblib.__version__}")
 
 # Load the trained model
-model_path = os.path.join(os.getcwd(), "battery_health_L_model.joblib")
+model_path = r"C:\Users\Karan\Desktop\MY_Projects\Final-Project\battery_health_L_model.joblib"
 model = joblib.load(model_path)
 
 # Streamlit App
