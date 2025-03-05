@@ -16,15 +16,15 @@ st.write("Files in directory:", os.listdir(current_directory))
 model_filename = "battery_health_L_model.joblib"
 model_path = os.path.join(current_directory, model_filename)
 
+if os.path.exists(model_path):
+    st.write("Model file found. Loading...")
+    model = joblib.load(model_path)
+else:
+    st.error(f"Model file '{model_filename}' not found! Please check the file path.")
+
 # Load the trained model
 # model_path = r"C:\Users\Karan\Desktop\MY_Projects\Final-Project\battery_health_L_model.joblib"
 # model = joblib.load(model_path)
-
-# Get the correct file path dynamically
-model_path = os.path.join(os.getcwd(), "battery_health_L_model.joblib")
-
-# Load the model
-model = joblib.load(model_path)
 
 # Streamlit App
 st.title("🔋 Battery Health Prediction App")
