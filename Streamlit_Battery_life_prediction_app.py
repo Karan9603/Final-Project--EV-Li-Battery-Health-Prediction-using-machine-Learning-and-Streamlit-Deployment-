@@ -5,6 +5,17 @@ import os
 
 st.write(f"Joblib version in Streamlit Cloud: {joblib.__version__}")
 
+# Get current directory
+current_directory = os.getcwd()
+st.write(f"Current Directory: {current_directory}")
+
+# List all files in the directory
+st.write("Files in directory:", os.listdir(current_directory))
+
+# Check if the model file exists
+model_filename = "battery_health_L_model.joblib"
+model_path = os.path.join(current_directory, model_filename)
+
 # Load the trained model
 # model_path = r"C:\Users\Karan\Desktop\MY_Projects\Final-Project\battery_health_L_model.joblib"
 # model = joblib.load(model_path)
