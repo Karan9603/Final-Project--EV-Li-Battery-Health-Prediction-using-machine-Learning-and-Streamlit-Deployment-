@@ -17,7 +17,7 @@ model_filename = "battery_health_L_model.joblib"
 model_path = os.path.join(current_directory, model_filename)
 
 if os.path.exists(model_path):
-    st.write("Model file found. Loading...")
+    st.write("Model file found. Loading...", model_path)
     model = joblib.load(model_path)
 else:
     st.error(f"Model file '{model_filename}' not found! Please check the file path.")
