@@ -3,6 +3,7 @@ import joblib
 import numpy as np
 import os
 
+st.write(f"Joblib version in Streamlit Cloud: {joblib.__version__}")
 
 # Load the trained model
 model_path = os.path.join(os.getcwd(), "battery_health_L_model.joblib")
