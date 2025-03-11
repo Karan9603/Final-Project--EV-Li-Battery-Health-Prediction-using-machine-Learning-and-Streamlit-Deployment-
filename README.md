@@ -12,4 +12,4 @@ This project predicts battery health using machine learning to enable preventive
 
 ## Streamlit App
 
-![Streamlit App](streamlit.PNG)
+![Streamlit App](streamlit.png)
