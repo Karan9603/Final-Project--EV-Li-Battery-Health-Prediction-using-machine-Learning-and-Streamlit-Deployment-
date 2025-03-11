@@ -9,3 +9,7 @@ This project predicts battery health using machine learning to enable preventive
 ✔️ Machine Learning Model: Trained regression models to predict battery degradation  
 ✔️ Model Evaluation: Metrics such as MAE, MSE, and R² score  
 ✔️ Streamlit Deployment: Web app for real-time predictions  
+
+## Streamlit App
+
+![Streamlit App](streamlit.png)
