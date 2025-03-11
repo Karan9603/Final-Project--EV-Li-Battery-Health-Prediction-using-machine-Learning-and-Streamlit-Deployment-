@@ -1,4 +1,4 @@
-# Final-Project --> Battery Health Prediction for Preventive Maintenance 🚗🔋
+# Final-Project --> EV's Li-Battery Health Prediction (Using Machine Learning & Streamlit Deployment) 🚗🔋
 
 ## Overview
 This project predicts battery health using machine learning to enable preventive maintenance. It includes exploratory data analysis (EDA), feature engineering, and model training using regression techniques. The trained model is deployed using Streamlit, allowing users to input battery parameters and get real-time predictions.  
